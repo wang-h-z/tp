@@ -59,10 +59,10 @@ public class ListingCard extends UiPart<Region> {
     private void initializeName() {
         String actualName = listing.getName().fullName;
 
-        // Check if the listing name length is greater than 45
-        if (actualName.length() > 45) {
-            // Truncate the listing name to 45 characters and add "..."
-            name.setText(actualName.substring(0, 45) + "...");
+        // Check if the listing name length is greater than 35
+        if (actualName.length() > 35) {
+            // Truncate the listing name to 35 characters and add "..."
+            name.setText(actualName.substring(0, 35) + "...");
         } else {
             name.setText(actualName);
         }

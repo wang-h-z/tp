@@ -69,10 +69,10 @@ public class PersonCard extends UiPart<Region> {
     private void initializeName() {
         String actualName = person.getName().fullName;
 
-        // Check if the name length is greater than 55
-        if (actualName.length() > 55) {
-            // Truncate the name to 55 characters and add "..."
-            name.setText(actualName.substring(0, 55) + "...");
+        // Check if the name length is greater than 35
+        if (actualName.length() > 35) {
+            // Truncate the name to 35 characters and add "..."
+            name.setText(actualName.substring(0, 35) + "...");
         } else {
             name.setText(actualName);
         }
